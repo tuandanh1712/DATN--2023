@@ -1,0 +1,13 @@
+tensorflow
+Keras
+opencv-python
+numpy
+pillow
+psutil
+matplotlib
+scikit-learn
+scikit-image
+Scipy
+h5py
+requests
+imageio

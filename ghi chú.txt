@@ -1,0 +1,19 @@
+kết nối raspberrypi với lap:
+ping -4 raspberrypi
+mk: 1231236nr
+Đứng tại thư mục DOC
+	.....
+sử dụng lệnh:
+python DOC3/align_dataset_mtcnn.py  DOC1/FaceData/anhkhuonmat DOC1/FaceData/anhcanchinh --image_size 160 --margin 32  --random_order --gpu_memory_fraction 0.25
+để crop ảnh và căn chỉnh khuôn mặt
+sử dụng lệnh:
+python DOC3/classifier.py TRAIN DOC1/FaceData/anhcanchinh DOC2/20180402-114759.pb DOC2/facemodel.pkl --batch_size 1000
+để train model
+sử dụng lệnh:
+python DOC3/classifier.py CLASSIFY DOC1/FaceData/anhcanchinh DOC2/20180402-114759.pb DOC2/facemodel.pkl --batch_size 1000
+để CLASSIFY model
+
+python DOC3/face_rec_test_2.py
+python DOC3/face_rec_cam.py
+
+Sử dụng lệnh python DOC3/main.py để khởi động hệ thống.
